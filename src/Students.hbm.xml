@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2018-2-7 22:15:09 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="Students" table="STUDENTS">
+        <id name="sid" type="int">
+            <column name="SID" />
+            <generator class="native" />
+        </id>
+        <property name="sname" type="java.lang.String">
+            <column name="SNAME" />
+        </property>
+        <property name="gender" type="java.lang.String">
+            <column name="GENDER" />
+        </property>
+        <property name="birthday" type="java.util.Date">
+            <column name="BIRTHDAY" />
+        </property>
+        <property name="spicture" type="java.sql.Blob">
+            <column name="SPICTURE" />
+        </property>
+    <!-- 
+        <component name="address" class="ADDRESS">
+        	<property name="postcod" column="POSTCOD"></property>
+        	<property name="phone" column="PHONE"></property>
+        	<property name="daddress" column="DADDRESS"></property>
+        </component>
+             -->
+    </class>
+</hibernate-mapping>
